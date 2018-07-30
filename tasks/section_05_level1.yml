@@ -274,7 +274,7 @@
   lineinfile: >
     dest=/etc/ssh/sshd_config
     regexp="^ClientAliveInterval "
-    line="ClientAliveInterval 300"
+    line="ClientAliveInterval 1800"
   notify: Reload sshd
   tags:
     - scored
