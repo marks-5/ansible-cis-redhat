@@ -138,7 +138,8 @@
   shell: /bin/cat /etc/shadow | /bin/awk -F':' '($2 == "" ) { print $1 " does not have a password "}'
   register: result6_2_1
   changed_when: "result6_2_1.stdout"
-  always_run: yes
+ # always_run: yes
+  check_mode: no
   tags:
     - scored
     - section6.2
