@@ -139,6 +139,7 @@
   register: result6_2_1
   changed_when: "result6_2_1.stdout"
   check_mode: no
+  invalid_task_attribute_failed: false
   tags:
     - scored
     - section6.2
@@ -150,6 +151,7 @@
   failed_when: result6_2_2.rc == 0
   changed_when: result6_2_2.rc == 0
   check_mode: no
+  invalid_task_attribute_failed: false
   ignore_errors: yes
   tags:
     - scored
@@ -162,6 +164,7 @@
   failed_when: result6_2_3.rc == 0
   changed_when: result6_2_3.rc == 0
   check_mode: no
+  invalid_task_attribute_failed: false
   ignore_errors: yes
   tags:
     - scored
@@ -174,6 +177,7 @@
   failed_when: result6_2_4.rc == 0
   changed_when: result6_2_4.rc == 0
   check_mode: no
+  invalid_task_attribute_failed: false
   ignore_errors: yes
   tags:
     - scored
@@ -186,6 +190,7 @@
   failed_when: result6_2_5.rc != 0
   changed_when: result6_2_5.rc != 0
   check_mode: no
+  invalid_task_attribute_failed: false
   ignore_errors: yes
   tags:
     - scored
@@ -232,6 +237,7 @@
   register: result6_2_11
   changed_when: "result6_2_11.stdout"
   check_mode: no
+  invalid_task_attribute_failed: false
   tags:
     - scored
     - check-only
@@ -243,6 +249,7 @@
   register: result6_2_12
   changed_when: "result6_2_12.stdout"
   check_mode: no
+  invalid_task_attribute_failed: false
   tags:
     - scored
     - check-only
@@ -282,6 +289,7 @@
   register: result6_2_17
   changed_when: "result6_2_17.stdout"
   check_mode: no
+  invalid_task_attribute_failed: false
   tags:
     - scored
     - check-only
@@ -293,6 +301,7 @@
   register: result6_2_18
   changed_when: "result6_2_18.stdout"
   check_mode: no
+  invalid_task_attribute_failed: false
   tags:
     - scored
     - check-only
@@ -304,6 +313,7 @@
   register: result6_2_19
   changed_when: "result6_2_19.stdout"
   check_mode: no
+  invalid_task_attribute_failed: false
   tags:
     - scored
     - check-only
